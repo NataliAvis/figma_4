@@ -1,0 +1,693 @@
+/* подключили шрифт */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Poppins&display=swap');
+
+*{
+    /* внешний отступ */
+    margin: 0;
+    /* внутренний отступ */
+    padding: 0;
+    /* размеры элементов */
+    box-sizing: border-box;
+}
+
+/* убрали из ссылок подчеркивание */
+a{text-decoration: none;}
+
+body{
+    /* использовали семейство шрифтов */
+    font-family: 'Poppins', sans-serif;    
+}
+
+.main-screen{
+    /* background: #ECE7E4 url(img/IMAGE_fon.jpg) right/50% 100% no-repeat;     */
+    background: #ECE7E4;
+    padding: 130px 100px 130px 100px;
+
+    position: relative;
+}
+.main-img{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+
+}
+
+.main-h2{
+    color: #645C55;
+    font-size: 14px;
+    /* начертание */
+    font-style: normal;
+    /* жирность начертания */
+    font-weight: 400;
+    /* высота строки */
+    line-height: 20px; /* 142.857% */
+    /* расстояние между слов */
+    letter-spacing: 2px;
+    /* регистр */
+    text-transform: uppercase;   
+     /* отступ от нижней границы */
+    margin-bottom: 20px;
+}
+
+h1{
+    /* максимальное значение ширины текста */
+    max-width: 420px;
+
+    color: #1B1A1A;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70.4px; /* 110% */ 
+    /* отступ от нижней границы */
+    margin-bottom: 18px;       
+}
+
+.main-p{
+    max-width: 510px;
+    color: #403E3B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */  
+
+    position: relative;
+    z-index: 2;
+}
+
+.button{
+    /* скругление кнопки */
+    border-radius: 14px;
+    background: #1B1A1A;
+
+    /* стилистика текста в кнопке */
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.4px;
+    
+    padding: 11px 20px;
+
+    /* отступ от верхней границы */
+    /* margin-top: 40px; */
+}
+
+.container-screen-h2{
+    /* отвечает за центрирование блочных элементов */
+    text-align: center;
+
+    margin-top: 61px;
+    margin-bottom: 19px;  
+    
+    color: #403E3B;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; /* 118.75% */    
+}
+
+.container-screen-2{
+    max-width: 530px;
+    /* отвечает за центрирование блочных элементов */
+    margin: 0 auto; 
+}
+
+.container-screen-p{
+    margin-bottom: 34px;
+
+    color: #403E3B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+
+}
+
+.container-screen-p-name{    
+    color: #1B1A1A;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 152.941% */    
+}
+
+.container-screen-p-partner{
+    color: #645C55;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */    
+
+    margin-bottom: 53px;    
+}
+/* для быстрого комментария  cntr+?*/
+/*блок для 3 страницы с текстом и картинкой*/
+.container{
+    max-width: 1200px;/*ограничение по максимальной ширине блока*/
+    margin: 0 auto; /*центрирование блока*/
+    /* border: 2px solid violet;  */
+    /* минимальная высота блока */
+    /* min-height: 100px; */
+}
+
+.subtitle{
+    color: #645C55;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.title{
+    color: #1B1A1A;
+    /* центрирование строчных элементов */
+    text-align: center;
+    font-size: 39px;
+    font-style: normal;
+    /* жирность текста */
+    font-weight: 400;
+    line-height: 42px; /* 107.692% */
+}
+/* блок с картинками */
+.cards{
+    text-align: center;
+    margin-top: 40px;
+
+}
+.card-item{
+    border: 2px dashed red; 
+    max-width: 350px;
+    text-align: center;
+    /* расположение карточек рядом друг с другом */
+    display: inline-block; 
+
+    vertical-align: middle;
+
+    /* сделали относительнми элементами */
+    position: relative;
+}
+.card-img{
+    max-width: 117px;
+    /* нижний отступ */
+    margin-bottom: 15px;
+}
+.card-title{
+    color: #403E3B;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */    
+
+    margin-bottom: 10px;
+}
+.card-text{
+    color: #645C55;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+
+    margin-bottom: 10px;
+
+    /* внутренние отступы */
+    padding: 0 42px;
+}
+
+/* работа с фоновым изображением */
+.sec-fluid{
+    /* указали минимальную высоту */
+    min-height: 600px;
+    /*для полномасштабных фоновых избражений  */
+    background: url(img/IMAGE_scr_1.jpg) center/cover no-repeat;
+    /* другая запись параметров полномасштабных изображений 
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    */
+
+    /* задаем оттупы для текста */
+    padding: 0 75px;
+
+    display: flex;
+    /* главная ось */
+    justify-content: flex-end;
+    /* поперечная ось */
+    align-items: center;
+
+}
+/* добавили к классу название, чтобы внести локальные изменения */
+.left{
+    background: url(img/IMAGE_scr_2.jpg) center/cover no-repeat;
+    /* главная ось */
+    justify-content: flex-start;   
+}
+
+.box{
+    max-width: 285px;  
+}
+
+.box-title{
+    color: #403E3B;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 2px;
+    text-transform: uppercase;    
+}
+
+.box-text{
+    color: #645C55;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* работа с логотипом */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    /* отступы между ссылками в навигации */
+    margin-right: 32px;
+}
+
+/*  */
+.sec-team{
+    padding: 100px;
+
+}
+
+.flex-team {
+    border: 2px solid red;
+    display: flex;
+
+        /* прижимаем к правой части главную ось */
+    justify-content: space-between;
+
+}
+
+.text-team {
+    border: 2px solid rebeccapurple;
+    /* max-width: 358px; */
+    /* %соотношение */
+    width: 38%; 
+}
+
+.title-team {
+    color: #403E3B;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; /* 118.75% */
+
+    margin-bottom: 14px;
+}
+.txt-team {
+    color: #645C55;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */ 
+    
+    margin-bottom: 30px;
+}
+.button_2 {
+    /* скругление кнопки */
+    border-radius: 14px;
+    background: #c7c4c4;
+
+    /* стилистика текста в кнопке */
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.4px;
+    
+    padding: 11px 20px;    
+}
+
+.teams {
+    border: 2px solid blue;
+    width: 68%;
+
+    display: flex;
+    /* для переноса картинок на новую строку */
+    flex-wrap: wrap;
+}
+
+.teams-item {
+    border: 2px solid #403E3B;   
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 36px;
+    margin-right: 15px;
+}
+
+.teams-img {
+    margin-right: 30px;
+}
+
+.teams-txt {
+
+}
+
+.teams-title {
+    color: #1B1A1A;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 152.941% */   
+}
+.teams-subtitle {
+    color: #645C55;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */   
+}
+/* фоновый флекс */
+.fon {
+    background: #CEC4BC;
+}
+.fon-box {
+    height: 314px;
+    flex-shrink: 0;  
+    
+    margin-right: 140px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.fon-box-2{
+    max-width: 550px;
+
+}
+.fon-box-text {
+    color: #645C55;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+}
+.fon-box-titel {
+    color: #1B1A1A;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 105% */
+}
+.fon-box-text-txt {
+    color: #1B1A1A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.4px;
+    
+}
+
+.progect{
+
+}
+.progect-textblock {
+
+}
+
+.progect-txt-h1{
+    color: #1B1A1A;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 107.692% */    
+}
+.progect-txt-p{
+    color: #645C55;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+}
+
+.progect-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* для переноса элементов на новую строку, если не помещаются по ширине */
+    flex-wrap: wrap;
+}
+.progect-item {
+    min-height: 460px;
+    width: 32%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 40px ;
+    
+}
+.bg1 {
+    background: url(img/IMAGE_item1.png) center/cover no-repeat;
+}
+.item-txt {
+}
+.item-button {
+}
+.bg2 {
+    background: url(img/IMAGE_item2.png) center/cover no-repeat
+}
+.bg3 {
+    background: url(img/IMAGE_item3.png) center/cover no-repeat
+}
+.progect-link {
+
+}
+
+.p-sup{
+    color: #645C55;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.p-sub{
+    color: #403E3B;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 130.435% */
+}
+
+.burger{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+
+    display: none;
+}
+.burger > img{
+    width: 100%;
+}
+
+/* подвал */
+.footer-flex {
+    display: flex;
+    /* выравнивание вдоль оси */
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.footer-logo {
+}
+.footer-txt {
+    width: 40%;
+    max-width: 430px;
+}
+.footer-icon {
+    width: 10%;
+    min-width: 112px;
+}
+
+.grid-container{
+    /* формирование сетки */
+    display: grid;
+
+    /* задаем количество колонок, в нашем случае их две (fr - означает, что колонки одинаковой ширины) */
+    grid-template-columns: 1fr 1fr;
+    /* определяем количество строк */
+    grid-template-rows: 1fr 1fr 1fr;
+    /* задает пространство между ячейками */
+    gap: 5%;
+    /* row-gap: 2%;
+    column-gap: 4%; */
+
+
+
+}
+/* указываем класс и элемент, который должны найти (изображения) и задаем им 100% размеры */
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* работаем с стартовыми линиями */
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.item2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.item3{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item4{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.item5{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+/* адаптив */
+@media(max-width:1100px){
+    .main-img{
+        display: none;
+    }
+}
+
+@media (max-width: 850px){
+    .nav-list{
+        /* скрываем элемент */
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+
+    .flex-team{
+        /* меняем ось */
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-team{
+        width: 65%;
+        margin-bottom: 25px;
+    }
+ }
+
+@media (max-width: 768px){
+    .progect-item{
+        width: 49%;
+        margin-bottom: 15px;
+    }
+    .progect-box{
+        justify-content: space-around;
+    }
+
+    .teams-item{
+        width: 80%;
+    }
+}
+
+@media (max-width: 580px){
+    .progect-item{
+        width: 80%;
+        height: 360px;
+    }
+    .main-screen{
+        padding: 100px 70px;
+    }
+    .main-screen h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .container-screen-2{
+        /* задаем внутренний отступ */
+        padding: 0 2%;
+    }
+    .title{
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px){
+    .nav{
+        /* перестраиваем элементы друг за другом */
+        flex-direction: column;
+        /* прижимаем элементы к левой части */
+        align-items: flex-start;
+    }
+    .nav-links{
+        /* переопределяем выравнивание вдоль поперечной оси */
+        align-self: flex-end;
+    }
+}
+@media (max-width: 475px){
+    .text-team{
+        width: 90%;
+    }
+    .teams{
+        width: 90%;
+    }
+
+}
+
+/* сделать адаптив до 375 */
